@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Responsive Web Page</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+    nav ul {
+      list-style-type: none;
+      padding: 0;
+      display: flex;
+      gap: 1rem;
+    }
+    nav a {
+      text-decoration: none;
+      color: #0077cc;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="https://www.w3.org/" target="_blank">Help</a></li>
+      </ul>
+    </nav>
+  </header>
+  <section id="about">
+    <h2>About</h2>
+    <p>This is the About section of the page.</p>
+  </section>
+  <div id="picture">
+    <picture>
+      <source media="(max-width: 480px)" srcset="img/pic1.jpg">
+      <source media="(max-width: 780px)" srcset="img/pic2.jpg">
+      <source media="(max-width: 1024px)" srcset="img/pic3.jpg">
+      <img src="img/pic4.jpg" alt="Beauty of Nature">
+    </picture>
+  </div>
+
+</body>
+</html>
